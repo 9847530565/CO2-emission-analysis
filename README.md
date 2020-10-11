@@ -1,4 +1,7 @@
 # CO2-emission-analysis
+## packages used-Numpy,Pandas,Sklearn,tkinter,seaborn
+## tool for data visualization- Tableau
+## language- Python
 In this repository, the data of various car companies is analyzed for finding out the factors affecting CO2 emission, top company in terms of CO2 emission and many more key points
 The entire process is divided into three main steps:- 1)Dataset Description 2)Data Visualization and 3)prediction of car condition using a suitable model
 
@@ -25,3 +28,15 @@ Independent Variables->Engine sze(in L),cylinders,Fuel consumption citywise(in g
 Dependent variable->,Co2 emission(in g/km)
 
 *for this purpose i have applied Multiple Linear Regression Model which involves following steps-:
+I->Test Train data splitting
+*the entire dataset is divided into two parts which are test data and train data.
+*The data with the help of which model is created is called train data and the data by which accuracy of model is checked is called test data.
+*generally the size of train data must be smaller than test data.so for that purpose, I have taken 20% of data as training data and 80% of data as testing data.
+*Now the model is created using train data.
+
+II->Model creation and accuracy 
+*Since there are more than one independent variable and one dependent variable as well as dataset is smaller in size so Multiple Linear Regression Model is effecient itself.
+*after generating the model and predicting the result using this model we get a value of 249.29248476641845g/km CO2 emissions with Rsquare value of 0.8808767275286365 on train data.
+* then we applied the same on test data and we achieved resultant of 250.433816742409g/km CO2 emissions with Rsquare value of 0.8783545840264559.
+*clearly the value of Rsquare for testing data is less than training data by a very small difference of 0.3 approx ,so the results are acceptable and model can be trusted.
+
