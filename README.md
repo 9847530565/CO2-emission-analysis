@@ -40,3 +40,7 @@ II->Model creation and accuracy
 * then we applied the same on test data and we achieved resultant of 250.433816742409g/km CO2 emissions with Rsquare value of 0.8783545840264559.
 *clearly the value of Rsquare for testing data is less than training data by a very small difference of 0.3 approx ,so the results are acceptable and model can be trusted.
 
+#SVM Model
+*In order to improve the accuracy SVR Model ie Support Vector Regressor model has been applied.
+*This model works on the concept of margin,kernel,gamma and C.
+*after applying SVR model accuracy on testing dATA increased to 91%.
